@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lora, Gabarito } from "next/font/google";
+import { Lora, Gabarito, Cormorant_Upright, Aleo } from "next/font/google";
 import "./globals.css";
 
 const lora = Lora(
@@ -16,6 +16,18 @@ const gabarito = Gabarito({
   variable: "--font-gabarito",
 })
 
+const cormorantUpright = Cormorant_Upright({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-cormorant-upright",
+})
+
+const aleo = Aleo({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-aleo"
+})
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -30,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lora.variable} ${gabarito.variable} antialiased`}
+        className={`${lora.variable} ${gabarito.variable} ${cormorantUpright.variable} ${aleo.variable} antialiased`}
       >
         {children}
       </body>

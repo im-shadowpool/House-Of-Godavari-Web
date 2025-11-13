@@ -1,13 +1,14 @@
-export default function Home() {
+import { Layout } from "@/components/layout/Layout";
+import { Container } from "@/components/layout/Container";
+
+export default function page() {
   return (
-    <main>
-      <h1>This is Heading One 1 - Testing</h1>
-      <h2>This is Heading One 1 - Testing</h2>
-      <h3>This is Heading One 1 - Testing</h3>
-      <h4>This is Heading One 1 - Testing</h4>
-      <h5>This is Heading One 1 - Testing</h5>
-      <p>This is a paragraph</p>
-      <b>This is Bold</b>
-      </main>
+    <Layout>
+      <Container className="" size="2xl">
+        <div className="h-16 w-full border ">
+
+        </div>
+      </Container>
+    </Layout>
   );
 }

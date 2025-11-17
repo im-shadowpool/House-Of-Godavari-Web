@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Upright, Aleo } from "next/font/google";
 import "@/styles/globals.css";
+import "@/styles/app.css";
 
 // const lora = Lora(
 //   {

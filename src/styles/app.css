@@ -1,0 +1,8 @@
+.IconItem {
+    svg path {
+        fill: var(----text-color);
+    }
+    svg stroke {
+        fill: var(----text-color);
+    }
+}

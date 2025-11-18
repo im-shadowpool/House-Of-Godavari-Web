@@ -4,6 +4,7 @@
   --white: #ffffff;
   --black: #09090b;
   --text-color: #27272a;
+  --text-light: #f5f5f5;
   --gray-color: #a3a3a3;
 }
 
@@ -21,10 +22,10 @@
   --green-950: #032b22;
 }
 :root {
-  --radius-sm: 6px;   /* rounded-sm */
-  --radius: 8px;      /* rounded */
-  --radius-md: 16px;  /* rounded-md */
-  --radius-lg: 24px;  /* rounded-lg */
+  --radius-sm: 6px; /* rounded-sm */
+  --radius: 8px; /* rounded */
+  --radius-md: 16px; /* rounded-md */
+  --radius-lg: 24px; /* rounded-lg */
 }
 @media (min-width: 640px) {
   :root {
@@ -32,6 +33,20 @@
     --radius: 8px;
     --radius-md: 12px;
     --radius-lg: 16px;
+  }
+}
+
+@layer base {
+  p {
+    @apply text-(--text-color);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+     @apply text-(--black);
   }
 }
 
@@ -49,7 +64,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   color: var(--black);
   font-family: var(--font-aleo);
   font-weight: 600;
@@ -77,14 +93,16 @@ h4 {
 h5 {
   font-size: 1.125rem;
 }
+h6 {
+  font-size: 1rem;
+}
 
 b,
 p {
-  font-family: var(--font-cormorant-upright);
+  font-family: var(--font-lora);
 }
 
 p {
-  color: var(--text-color);
   font-size: 1rem;
   line-height: 1.4em;
   font-weight: 400;

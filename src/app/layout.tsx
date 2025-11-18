@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Cormorant_Upright, Aleo } from "next/font/google";
+import { Cormorant_Upright, Aleo, Lora } from "next/font/google";
 import "@/styles/globals.css";
 import "@/styles/app.css";
 
-// const lora = Lora(
-//   {
-//     subsets: ["latin"],
-//     weight: ["400", "500", "600", "700"],
-//     variable: "--font-lora",
-//   }
-// )
+const lora = Lora(
+  {
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
+    variable: "--font-lora",
+  }
+)
 
 // const gabarito = Gabarito({
 //   subsets: ["latin"],
@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cormorantUpright.variable} ${aleo.variable} antialiased`}
+        className={`${cormorantUpright.variable} ${aleo.variable} ${lora.variable} antialiased`}
       >
         {children}
       </body>

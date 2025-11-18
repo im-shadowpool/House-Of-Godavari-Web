@@ -5,7 +5,7 @@ export default function page() {
   return (
     <Layout>
       <Container className="" size="2xl">
-        <div className="h-16 w-full border ">
+        <div className="w-full border h-96">
 
         </div>
       </Container>
